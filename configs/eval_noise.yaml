@@ -1,0 +1,37 @@
+checkpoint: checkpoints/train_aug_run4/best_wer.pt
+test_root: /workingspace_aiclub/WorkingSpace/Personal/chinhnm/ccc/test_raw/testset
+split: test
+batch_size: 4
+num_workers: 2
+scan_workers: 8
+sample_cache_path: .cache/avsr_samples_av_test.json
+scan_log_every: 100
+feature_cache_dir: /workingspace_aiclub/WorkingSpace/Personal/chinhnm/ccc/CS338/.cache/avsr_features_av_test
+cache_video: true
+cache_audio: true
+skip_errors: true
+max_skip_errors: 10
+prefetch_factor: 2
+persistent_workers: true
+max_video_frames: 192
+image_size: null
+video_grayscale: null
+device: cuda
+eval_max_batches: null
+mode: compare
+language: null
+task: null
+use_video_audio: true
+max_new_tokens: 256
+num_beams: 1
+chunk_seconds: 30.0
+chunk_overlap_seconds: 0.0
+compare_modes:
+  - audio-only
+  - av
+compare_snr_db:
+  - -10
+  - 10
+noise_seed: 338
+all_noise: true
+

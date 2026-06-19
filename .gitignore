@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Runtime outputs
+.cache/
+checkpoints/
+
+whisper-flamingo/
+downloads/
+dataset/
+av_hubert/
+.vscode/
+.156venv/
+results/
+whisper-flamingo/
+data

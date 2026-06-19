@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cs338"
+version = "0.1.0"
+description = "Clip-level audio-visual speech recognition training and inference pipeline"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "av>=12.0",
+    "huggingface_hub>=0.23",
+    "matplotlib>=3.7",
+    "numpy>=1.26",
+    "opencv-python>=4.8",
+    "pyyaml>=6.0",
+    "torch>=2.2",
+    "torchcodec>=0.13",
+    "torchaudio>=2.2",
+    "torchvision>=0.17",
+    "transformers>=4.40",
+    "tqdm>=4.66",
+    "ultralytics>=8.3",
+]
+
+[project.optional-dependencies]
+avhubert = [
+    "fairseq==0.12.2",
+    "hydra-core>=1.0.7,<1.1",
+    "omegaconf>=2.0.6,<2.1",
+    "opencv-python>=4.8",
+    "scipy>=1.11",
+]
+dev = []
+
+[project.scripts]
+cs338-train = "cs338.train:main"
+cs338-infer = "cs338.inference:main"
+
+[tool.setuptools.packages.find]
+include = ["cs338*"]

@@ -1,0 +1,6 @@
+Collecting lap
+  Downloading lap-0.5.13-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.6 kB)
+Requirement already satisfied: numpy>=1.21.6 in /workingspace_aiclub/WorkingSpace/Personal/chinhnm/ccc/CS338/.156venv2/lib/python3.12/site-packages (from lap) (2.4.6)
+Downloading lap-0.5.13-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 6.8 MB/s eta 0:00:00
+Installing collected packages: lap
